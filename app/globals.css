@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.case-engine {
+  position: fixed;
+  inset: 0;
+  background: #000;
+}
+
+.prototype-overlay {
+  position: fixed;
+  left: 20px;
+  bottom: 18px;
+  display: grid;
+  gap: 3px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  pointer-events: none;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.85);
+}
+
+.prototype-overlay strong {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.prototype-overlay span {
+  color: rgba(255, 255, 255, 0.62);
+}
